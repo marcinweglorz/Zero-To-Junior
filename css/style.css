@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  background-color: royalblue;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+header {
+  background-color: rgb(218, 33, 209);
+}
+
+.nav {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item a {
+  color: palegreen;
+  padding: 0 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px;
+  transition: color 0.5s;
+}
+
+.nav-item a:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+main {
+  height: 100vh;
+  line-height: 100px;
+  background-image: url(https://cdn.pixabay.com/photo/2016/08/29/08/55/work-1627703_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(74, 17, 172);
+}
+
+.quick-text {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+footer {
+  padding: 30px 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: palegreen;
+}
+
+main ~ footer {
+    background-color: rgb(7, 157, 137);
+  }
