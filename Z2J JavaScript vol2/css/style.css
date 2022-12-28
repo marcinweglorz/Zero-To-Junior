@@ -5,9 +5,18 @@
 }
 
 body {
-	margin-top: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #333;
-	font-size: 36px;
-	color: #fff;
+	background-color: royalblue;
+	font-size: 50px;
+}
+
+.text p {
+	height: 100%;
+	width: 100%;
+	color: black;
 }
