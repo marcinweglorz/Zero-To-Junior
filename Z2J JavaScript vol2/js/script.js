@@ -2,22 +2,22 @@ function add(num1, num2) {
 	return num1 + num2
 }
 
-function subtract(num1, num2) {
+function sub(num1, num2) {
 	return num1 - num2
 }
 
-function mult(num1, num2) {
+function mul(num1, num2) {
 	return num1 * num2
 }
 
-function divide(num1, num2) {
+function div(num1, num2) {
 	if (num2 === 0) {
 		alert('Nie dzielimy przez zero!')
 	} else {
 		return num1 / num2
 	}
 }
-function percent(num1, num2) {
+function per(num1, num2) {
 	return num1 % num2
 }
 
@@ -38,21 +38,21 @@ while (z2j) {
 		case '-':
 			if (isNaN(num1) || isNaN(num2)) {
 				alert('Użyłeś złego znaku, popraw się!')
-			} else alert((num1 = subtract(num1, num2)))
+			} else alert((num1 = sub(num1, num2)))
 			break
 		case '/':
 			if (isNaN(num1) || isNaN(num2)) {
 				alert('Użyłeś złego znaku, popraw się!')
-			} else alert((num1 = divide(num1, num2)))
+			} else alert((num1 = div(num1, num2)))
 			break
 		case '*':
 			if (isNaN(num1) || isNaN(num2)) {
 				alert('Użyłeś złego znaku, popraw się!')
-			} else alert((num1 = mult(num1, num2)))
+			} else alert((num1 = mul(num1, num2)))
 			break
 		case '%':
 			if (isNaN(num1) || isNaN(num2)) {
 				alert('Użyłeś złego znaku, popraw się!')
-			} else alert((num1 = percent(num1, num2)))
+			} else alert((num1 = per(num1, num2)))
 	}
 }
