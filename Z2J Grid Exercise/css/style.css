@@ -4,9 +4,10 @@
 	margin: 0;
 }
 
-html {
+body {
 	font-family: 'Montserrat', sans-serif;
 	font-style: 10px;
+	counter-reset: z2j;
 }
 
 .container {
@@ -24,13 +25,27 @@ html {
 	width: 10rem;
 	border-radius: 1rem;
 	transition: 0.5s;
+	font-size: 1.2rem;
 }
 
-.btn:nth-child(4) {
+.btn:nth-of-type(4) {
 	background-color: orange;
 }
-.btn:nth-child(9) {
+.btn:nth-last-of-type(1) {
 	background-color: greenyellow;
+}
+
+.row-1::before {
+	content: '' counter(z2j) '. ';
+	counter-increment: z2j;
+}
+.row-2::before {
+	content: counter(z2j, upper-roman) ') ';
+	counter-increment: z2j;
+}
+.row-3::before {
+	content: '[' counter(z2j) '] ';
+	counter-increment: z2j;
 }
 
 /* button hovers */
@@ -40,9 +55,9 @@ html {
 	background-color: rgb(161, 152, 152);
 }
 
-.btn:nth-child(4):hover {
+.btn:nth-of-type(4):hover {
 	background-color: lime;
 }
-.btn:nth-child(9):hover {
+.btn:nth-last-of-type(1):hover {
 	background-color: purple;
 }
