@@ -15,12 +15,8 @@ html {
 	left: 40%;
 	margin: 0.5rem;
 	grid-template-columns: 0.1fr 0.1fr 1fr;
-
+	grid-auto-flow: row;
 	gap: 1rem;
-}
-
-.row-1 {
-    
 }
 
 .btn {
