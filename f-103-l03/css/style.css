@@ -35,6 +35,10 @@ body {
 	background-color: greenyellow;
 }
 
+.btn:active {
+	box-shadow: 3px 3px black;
+	transform: translateY(2px);
+}
 .row-1::before {
 	content: '' counter(z2j) '. ';
 	counter-increment: z2j;
