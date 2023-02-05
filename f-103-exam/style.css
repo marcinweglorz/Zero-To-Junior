@@ -1,0 +1,85 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  grid-gap: 5px;
+  width: 100vw;
+  height: 400px;
+  max-width: 600px;
+  background-color: black;
+}
+.container .slot {
+  width: 100%;
+  height: 100%;
+  background-color: #13547a;
+}
+
+.gameTitle {
+  position: relative;
+  text-shadow: 2px 5px 3px #13547a;
+  text-transform: uppercase;
+  font-size: 5.5rem;
+  color: white;
+}
+
+.rematch {
+  position: absolute;
+  left: 33%;
+  top: 43%;
+  color: black;
+  font-size: 3rem;
+  border-radius: 20px;
+  padding: 1em 1.5em;
+  background-color: white;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  pointer-events: none;
+  transition: background-color 0.3s;
+}
+.rematch:hover {
+  color: white;
+  background-color: #80d0c7;
+}
+
+body.over .rematch {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+
+.playerOne {
+  background-image: url(/img/x.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+.computer {
+  background-image: url(/img/o.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+/*# sourceMappingURL=style.css.map */
