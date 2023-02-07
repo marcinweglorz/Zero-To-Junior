@@ -1,6 +1,5 @@
 function z2j() {
     const gameTitle = document.querySelector(".gameTitle");
-    const rematchBtn = document.querySelector(".rematch");
     const slots = document.querySelectorAll(".slot");
     const gridArray = Array.from(slots);
     let tracking = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -24,15 +23,34 @@ function z2j() {
 
             if (winCheck("playerOne", slots)) {
                 gameTitle.innerHTML = "Wygrałeś!";
-                document.body.classList.add("over");
+                let btn = document.createElement('button')
+                btn.innerHTML = 'Zagraj ponownie!'
+                btn.id = 'resetBtn'
+                btn.addEventListener('click', function () {
+                    alert('Czas na kolejną rundę!')
+                    document.getElementById('resetBtn').remove();
+                    document.querySelectorAll('.slot').forEach(function (slot) {
+                        slot.classList.remove('playerOne', 'computer')
+                    })
+                })
+                document.body.appendChild(btn)
                 return;
             }
 
 
             if (tracking.length === 0) {
                 gameTitle.innerHTML = "Mamy remis!";
-                document.body.classList.add("over");
-                console.log("Nothing Left");
+                let btn = document.createElement('button')
+                btn.innerHTML = 'Zagraj ponownie!'
+                btn.id = 'resetBtn'
+                btn.addEventListener('click', function () {
+                    alert('Czas na kolejną rundę!')
+                    document.getElementById('resetBtn').remove();
+                    document.querySelectorAll('.slot').forEach(function (slot) {
+                        slot.classList.remove('playerOne', 'computer')
+                    })
+                })
+                document.body.appendChild(btn)
                 return;
 
 
@@ -48,7 +66,17 @@ function z2j() {
 
             if (winCheck("computer", slots)) {
                 gameTitle.innerHTML = "Komputer Wygrał!";
-                document.body.classList.add("over");
+                let btn = document.createElement('button')
+                btn.innerHTML = 'Zagraj ponownie!'
+                btn.id = 'resetBtn'
+                btn.addEventListener('click', function () {
+                    alert('Czas na kolejną rundę!')
+                    document.getElementById('resetBtn').remove();
+                    document.querySelectorAll('.slot').forEach(function (slot) {
+                        slot.classList.remove('playerOne', 'computer')
+                    })
+                })
+                document.body.appendChild(btn)
                 return;
             }
         })

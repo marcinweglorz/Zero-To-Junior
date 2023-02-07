@@ -37,6 +37,19 @@ body {
   }
 }
 
+button {
+  position: absolute;
+  top: 51%;
+  padding: 0.5em 1em;
+  font-size: 4rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #80d0c7;
+  color: white;
+  cursor: pointer;
+}
+
+
 .gameTitle {
   position: relative;
   height: 100px;
@@ -45,36 +58,6 @@ body {
   font-size: 5.5rem;
   color: white;
 
-}
-
-.rematch {
-  position: absolute;
-  left: 33%;
-  top: 43%;
-  color: black;
-  font-size: 3.0rem;
-  border-radius: 20px;
-  border: none;
-  padding: 1em 1.5em;
-  background-color: white;
-  opacity: 0;
-  visibility: hidden;
-  cursor: pointer;
-  pointer-events: none;
-  transition: background-color .3s;
-
-  &:hover {
-    color: white;
-    background-color: #80d0c7;
-  }
-}
-
-body.over {
-  .rematch {
-    opacity: 1;
-    pointer-events: all;
-    visibility: visible;
-  }
 }
 
 .playerOne {
