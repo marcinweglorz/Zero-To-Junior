@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -11,6 +13,7 @@
 }
 
 body {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +31,8 @@ body {
   max-width: 600px;
   background-color: black;
 }
-.container .slot {
+
+.slot {
   width: 100%;
   height: 100%;
   background-color: #13547a;
@@ -56,17 +60,24 @@ button {
 }
 
 .playerOne {
-  background-image: url(/img/x.png);
+  background-image: url("./img/x.png");
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center;
 }
 
 .computer {
-  background-image: url(/img/o.png);
+  background-image: url("./img/o.png");
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center;
+}
+
+.rematch-btn {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 10;
 }
 
 /*# sourceMappingURL=style.css.map */
