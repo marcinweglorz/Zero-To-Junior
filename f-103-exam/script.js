@@ -5,7 +5,7 @@ const rematchBtn = document.querySelector(".rematch-btn");
 let tracking = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 let currentPlayer = "playerOne";
 
-function startGame() {
+function z2j() {
     slots.forEach((slot) =>
         slot.addEventListener("click", (e) => {
             const index = gridArray.indexOf(e.target);
@@ -77,4 +77,4 @@ function clearAll() {
     document.getElementById("resetBtn").remove();
 }
 
-startGame();
+z2j();
