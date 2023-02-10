@@ -44,7 +44,6 @@
 
 @media only screen and (max-width: 768px) {
     .column {
-        width: 100%;
         box-shadow: 100px 50px 50px 100px greenyellow;
     }
 
@@ -52,4 +51,6 @@
         width: 100%;
         box-shadow: 100px 50px 50px 100px greenyellow;
     }
+
+
 }
