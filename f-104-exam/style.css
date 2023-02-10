@@ -43,14 +43,15 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .column {
-        box-shadow: 100px 50px 50px 100px greenyellow;
-    }
-
     .row {
+        right: auto;
         width: 100%;
-        box-shadow: 100px 50px 50px 100px greenyellow;
+        box-shadow: 50px 50px 50px 50px greenyellow;
+
     }
 
-
+    .row > div {
+        box-shadow: 30px 50px 50px 30px greenyellow;
+        margin: 0 .1em;
+    }
 }
