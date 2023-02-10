@@ -26,7 +26,7 @@
 .column {
     flex: 0 0 auto;
     width: 200px;
-    margin-right: 16px;
+    margin-right: 10px;
     overflow: hidden;
     box-shadow: 15px 15px 15px 25px greenyellow;
 }
@@ -51,7 +51,7 @@
     }
 
     .row > div {
-        box-shadow: 30px 50px 50px 30px greenyellow;
+        box-shadow: 20px 10px 50px 50px greenyellow;
         margin: 0 .1em;
     }
 }
