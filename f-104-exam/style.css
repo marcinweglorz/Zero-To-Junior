@@ -1,0 +1,55 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    position: fixed;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    width: 500px;
+    overflow-x: scroll;
+    border: 7px solid greenyellow;
+}
+
+.column {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 16px;
+    overflow: hidden;
+    box-shadow: 15px 15px 15px 25px greenyellow;
+}
+
+.column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s ease-in-out;
+}
+
+.column img:hover {
+    transform: scale(1.3);
+}
+
+@media only screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+        box-shadow: 100px 50px 50px 100px greenyellow;
+    }
+
+    .row {
+        width: 100%;
+        box-shadow: 100px 50px 50px 100px greenyellow;
+    }
+}
